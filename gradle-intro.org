@@ -1,0 +1,70 @@
+#+Title: Gradle Intro
+#+Author: gjo
+* Install Gradle
+- Requirements :: Java JDK (v7 or 8); set JAVA_HOME env
+1. Download zip from http://gradle.org
+Expand zip to disk
+Add gradle/bin to path env var
+2. Via sdk - http://sdkman.io
+Install sdk    =curl -s "https://get.sdkman.io" | bash=
+Test sdk       =sdk version=
+Install gradle =sdk install gradle=
+
+- Test ::  =gradle -v=
+#+BEGIN_SOURCE
+------------------------------------------------------------
+Gradle 2.13
+------------------------------------------------------------
+
+Build time:   2016-04-25 04:10:10 UTC
+Build number: none
+Revision:     3b427b1481e46232107303c90be7b05079b05b1c
+
+Groovy:       2.4.4
+Ant:          Apache Ant(TM) version 1.9.6 compiled on June 29 2015
+JVM:          1.8.0_91 (Oracle Corporation 25.91-b14)
+OS:           Linux 4.4.0-24-generic amd64
+#+END_SOURCE
+
+* Build Scripting Styles
+- Imperative :: Detailed Commands/tasks 
+  - Ant
+- Declarative :: Describe the outcomes 
+  - Maven
+** Gradle
+- prefer declarative
+- configurable
+- detailed commands allowed
+* Gradle Tasks
+Task is basic unit of activity
+Task is object (Groovy/Java)
+Phases:
+1. Configuration
+  - Determine what tasks to run
+2. Execution
+  - Do work/tasks
+* xxx 2
+slide 2
+* List
+- item 1
+- item 2
+* Ordered list
+command =ls=
+1. item 1
+2. item 2
+* Table 
+| # |                       |
+|---+-----------------------|
+| 1 | a                     |
+| 2 | bb                    |
+| 3 | ccc                   |
+| 4 | d and some words here |
+* Code blocks
+- Press =c= to go to next code block
+#+BEGIN_SRC sh
+ls
+#+END
+- Press =c= to go to next code block
+#+BEGIN_SRC sh
+pwd
+#+END

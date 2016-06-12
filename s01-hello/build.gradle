@@ -1,0 +1,10 @@
+// gradle hello world sample
+
+task hello << {
+  print 'hello, '
+}
+
+task world (dependsOn: hello) << {
+  println 'world'
+}
+//world.dependsOn hello

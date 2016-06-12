@@ -1,0 +1,13 @@
+// gradle hello world sample
+
+println 'outside task'
+task hello { println 'hello-configuration'}
+hello << {
+  print 'hello-execution '
+}
+
+task world {
+  println 'world-configuration'
+} << {
+  println 'world-execution '
+}
